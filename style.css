@@ -1,0 +1,6 @@
+.navbar {
+    display: flex;
+    background-color: greenyellow;
+    justify-content: space-around;
+    align-items: center;
+}
