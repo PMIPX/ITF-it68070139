@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITF 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <p>68070139</p>
+      <h2>ITF Website</h2>
+      <p>Week 14</p>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 id="my-title">ITF Simple Bank</h2>
+    <img src="tree.png" width="96" alt="tree" />
+    <p>Welcome to my first HTML + CSS + JS website!</p>
+  </div>
+
+  <!-- Output Log -->
+  <div class="log-section">
+    <h3>System Output</h3>
+    <textarea id="output_log" readonly></textarea>
+  </div>
+
+  <!-- Account -->
+  <div class="Info">
+    <div class="Account_Overview">
+      <h3>Account Overview</h3>
+      <div class="Account">
+        <img src="user.png" width="80" alt="user">
+        <div class="A_info">
+          <h4>Account Information</h4>
+          <p>Name: Phedanate Silaarj</p>
+          <p>Type: Saving Account</p>
+        </div>
+      </div>
+
+      <!-- Balance -->
+      <div class="Balance">
+        <img src="briefcase.png" width="80" alt="balance">
+        <div class="balance_info">
+          <h4>Balance Information</h4>
+          <label for="account_balance">Current account<br> balance:</label>
+          <input type="number" id="account_balance"><br>
+
+          <label for="cash_balance">Current cash<br> balance:</label>
+          <input type="number" id="cash_balance"><br>
+          <button>
+            <span class="button_top" onclick="setBalance()"> Change </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bank -->
+      <div class="Bank_Operation">
+        <img src="cart.png" width="80" alt="bank operation">
+        <div class="Bank_info">
+          <h4>Bank Operation</h4>
+          <label for="operation_type"></label>
+          <select id="operation_type">
+            <option value="Deposit">Deposit</option>
+            <option value="Withdraw">Withdraw</option>
+          </select>
+          <input type="number" id="operation_amount" placeholder=""><br>
+          <button>
+            <span class="text" onclick="doOperation()">Proceed</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class = "Financial">
+        <h3>Financial Tools</h3>
+        <div class="Currency"> 
+            <img src="coins.png" width="80" alt=""> 
+            <div class="Currency_Info"> 
+                <h4>Currency Converter</h4> 
+                <label for="my_input"> Input Balance: 
+                    <input type="number"> 
+                </label><br> 
+                <label for=""> Output Balance: 
+                    <input type="number"><br> </label> 
+                    Input currency: 
+                    <label for="currency"> 
+                        <select name="currency" id="currency"> 
+                            <option value="Deposite">BATH</option> 
+                            <option value="Withdraw">USD</option> 
+                        </select><br>
+                    </label> 
+                    <button>
+                      <span class="button_top"> Converte </span>
+                    </button> 
+                </div> 
+            </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
